@@ -14,7 +14,7 @@ import SignUp from "./pages/SignUp";
 
 const ReportedPost = lazy(() => import("./pages/ReportedPost"));
 
-// const DevicesLocations = lazy(() => import("./pages/DevicesLocations"));
+const DevicesLocations = lazy(() => import("./pages/DevicesLocations"));
 const VerifyEmail = lazy(() => import("./pages/VerifyEmail"));
 const EmailVerifiedMessage = lazy(() => import("./pages/EmailVerifiedMessage"));
 const BlockDevice = lazy(() => import("./pages/BlockDevice"));
@@ -71,10 +71,10 @@ export const privateRoutes = [
     path: "/following",
     element: <Following />,
   },
-  // {
-  //   path: "/devices-locations",
-  //   element: <DevicesLocations />,
-  // },
+  {
+    path: "/devices-locations",
+    element: <DevicesLocations />,
+  },
 ];
 
 export const publicRoutes = [
